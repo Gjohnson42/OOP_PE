@@ -3,6 +3,10 @@
  */
 public class Runner {
     public static void main(String[] args){
+        SimpleDotCom one= new SimpleDotCom();
+        int [] locations = {2,3,4};
+
+
 
     }
 }
