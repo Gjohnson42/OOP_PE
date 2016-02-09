@@ -6,10 +6,11 @@ public class Runner {
         SimpleDotCom one= new SimpleDotCom();
         int [] locations = {2,3,4};
         one.setLocationArray(locations);
-        if(one.checkYourself("1")=="hit"){
+        if(one.checkYourself("2")=="hit"){
             System.out.println("The method works as intended");
         }else{
             System.out.println("Nope. Something went wrong.");
+            System.out.println();
         }
 
 
