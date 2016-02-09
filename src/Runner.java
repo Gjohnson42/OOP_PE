@@ -5,6 +5,13 @@ public class Runner {
     public static void main(String[] args){
         SimpleDotCom one= new SimpleDotCom();
         int [] locations = {2,3,4};
+        one.setLocationArray(locations);
+        if(one.checkYourself("1")=="hit"){
+            System.out.println("The method works as intended");
+        }else{
+            System.out.println("Nope. Something went wrong.");
+        }
+
 
 
 
