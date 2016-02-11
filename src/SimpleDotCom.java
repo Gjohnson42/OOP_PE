@@ -9,13 +9,14 @@ public class SimpleDotCom {
         return (int)(Math.random() * range) + min;
     }
     int [] tossupArray(){
-        int [] toss = new int [3];
+        int [] toss = new int [4];
         //the magic number here is the max and min
-        int randArrayStart =randomWithRange(0,4);
+        int randArrayStart =randomWithRange(1,5);
         //now to use this as a startpoint to iterate through and set the rest of the array, setting it as need be.
-        for (int currentPt: toss){
-            toss[currentPt]=randArrayStart+currentPt;
-            currentPt++;
+        int x=0;
+        while (x<toss.length){
+            toss[x]=randArrayStart+x;
+            x++;
         }
         return toss;
     }
@@ -24,6 +25,13 @@ public class SimpleDotCom {
         locationCells=tossupArray();
     }
    int[] getLocationCells(){return locationCells;}
+    void displayLocation(){
+        System.out.println(locationCells[0]);
+        System.out.println(locationCells[1]);
+        System.out.println(locationCells[2]);
+
+
+    }
 
     int getNumHits(){
         return  numHits;

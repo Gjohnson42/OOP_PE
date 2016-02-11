@@ -8,12 +8,10 @@ public class Runner {
         SimpleDotCom hans = new SimpleDotCom();
         //just a little testcode for tossup array. delete it when you know it works
         hans.setLocationArray();
-        for(int testIteration:hans.getLocationCells()){
-            System.out.println(hans.getLocationCells()[testIteration]);
-            testIteration++;
+        hans.displayLocation();
         }
 
 
 
     }
-}
+
