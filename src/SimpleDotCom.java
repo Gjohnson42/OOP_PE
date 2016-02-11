@@ -46,9 +46,14 @@ public class SimpleDotCom {
                 numHits++;
                 break;
             }
+            else{
+                result= "miss";
+            }
         }
         if (numHits == 3) {
-            System.out.println("You have killed this upstart!");
+
+            result="kill";
+
         }
         return result;
 
