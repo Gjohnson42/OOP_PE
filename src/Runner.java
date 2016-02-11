@@ -1,14 +1,18 @@
 /**
  * Created by garrett on 2/10/16.
  */
-import java.util.Scanner;
+
 public class Runner {
     public static void main(String[] args) {
-        Scanner in = new Scanner(System.in);
         SimpleDotCom hans = new SimpleDotCom();
-        //just a little testcode for tossup array. delete it when you know it works
-        hans.setLocationArray();
-        hans.displayLocation();
+        ReadyBakeInput inny= new ReadyBakeInput();
+        boolean isAlive= true;
+        System.out.println("Hans the dotcom yet lives. Make him run! Enter numbers 0-6 to hit him. 3 consecutive hits will kill him. ");
+        while (isAlive==true){
+            //now begins the great gameplay loop
+
+        }
+
         }
 
 

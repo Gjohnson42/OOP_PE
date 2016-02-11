@@ -11,7 +11,7 @@ public class SimpleDotCom {
     int [] tossupArray(){
         int [] toss = new int [4];
         //the magic number here is the max and min
-        int randArrayStart =randomWithRange(1,5);
+        int randArrayStart =randomWithRange(0,4);
         //now to use this as a startpoint to iterate through and set the rest of the array, setting it as need be.
         int x=0;
         while (x<toss.length){
