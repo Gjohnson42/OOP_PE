@@ -39,7 +39,6 @@ public class SimpleDotCom {
     String checkYourself(String guess) {
         String result = "miss";
         int guessInt = Integer.parseInt(guess);
-        System.out.println(guessInt);
         for (int cell : locationCells) {
             if (cell == guessInt) {
                 result = "hit";
