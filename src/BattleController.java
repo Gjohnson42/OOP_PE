@@ -20,4 +20,5 @@ public class BattleController {
         return inputLine;
     }
 
+
 }
