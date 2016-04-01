@@ -29,7 +29,7 @@ public class Permanent {
 
     @Override
     public String toString() {
-        String summary= "This Permanent's name is: "+ getName() +"\nInitiative advantage is:"+ getInitAdv()+"\nEntry Message is: ";
+        String summary= "This Permanent's name is: "+ getName() +"\nInitiative advantage is:"+ getInitAdv()+"\nEntry Message is: "+ getEntryMessage();
         return summary;
     }
 }
