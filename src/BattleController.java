@@ -2,6 +2,8 @@
  * Created by garrett on 2/11/16.
  */
 import java.io.*;
+import java.util.ArrayList;
+
 public class BattleController {
     //this isn't my class, so I won't understand it all, but in the meantime, I can use it's methods to get input.
    //This method requires a prompt that it will display to the user, then returns the String it reads from the user.
@@ -19,6 +21,27 @@ public class BattleController {
         }
         return inputLine;
     }
+    ArrayList<Permanent> initial= new ArrayList<Permanent>();
+    //adds a new permanent to the end of the initial arraylist.
+    void addPermanent(Permanent p){
+        initial.add(p);
+        String m= "A "+p.getName()+" Has been added.\n";
+        System.out.println(m);
+
+    }
+   //Displays the enter the battlefield message for each permanent in the given ArrayList
+    void displayETBMessage(ArrayList<Permanent> toBePrinted) {
+        for (Permanent canary : toBePrinted) {
+            System.out.println(canary.getEntryMessage());
+        }
+    }
+    // iterates, displaying the toString method of each item in the grid.
+    void printContents(ArrayList<Permanent> toBePrinted){
+        for (Permanent canary:toBePrinted){
+            System.out.println(canary.toString());
+        }
+    }
+
 
 
 }
