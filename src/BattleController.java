@@ -23,12 +23,28 @@ public class BattleController {
     }
     ArrayList<Permanent> initial= new ArrayList<Permanent>();
     //adds a new permanent to the end of the initial arraylist.
+
+    public ArrayList<Permanent> getInitial() {
+        return initial;
+    }
+
     void addPermanent(Permanent p){
         initial.add(p);
         String m= "A "+p.getName()+" Has been added.\n";
-        System.out.println(m);
-
+        System.out.println(m);}
+    void setToAlteredArray(ArrayList original, ArrayList altered){
+        original= altered;
     }
+    //This method takes in an arraylist, and then will return an arraylist that is sorted by initiative order.
+    ArrayList sortByInit(ArrayList<Permanent> temp) {
+        ArrayList<Permanent> sorted = new ArrayList<Permanent>();
+        int originalSize=temp.size();
+        while (temp.size>1){
+
+          }
+        }
+
+
    //Displays the enter the battlefield message for each permanent in the given ArrayList
     void displayETBMessage(ArrayList<Permanent> toBePrinted) {
         for (Permanent canary : toBePrinted) {
